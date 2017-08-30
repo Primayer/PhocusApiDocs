@@ -10,7 +10,7 @@ The Primayer API provides access to the raw data recorded by the Xilog logger. T
 
 
 - [*logger*](#loggerserial-begin-end-token): Returns data for logger specified by date time range.
-- [*loggers*](#loggersbegin-end-token: Returns all loggers specified by date time range.
+- [*loggers*](#loggersbegin-end-token): Returns all loggers specified by date time range.
 
 # API
 
