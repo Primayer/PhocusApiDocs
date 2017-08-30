@@ -51,7 +51,7 @@ fetch(path).then(function(response) {
 ## loggers(begin, end, token)
 
 ##### Purpose
-Returns array of loggers
+Returns array of loggers with data within the date range
 
 ##### Signature
    1. Endpoint
