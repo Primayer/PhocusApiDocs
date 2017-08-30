@@ -4,7 +4,7 @@ Questions? Find us at [development@primayer.co.uk](mailto:development@primayer.c
 
 # Phocus Data Access
 
-The Primayer API provides access to the raw data recorded by the Xilog logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the settings section of [PrimeWeb](http://cloud.primayer.com). 
+The Primayer API provides access to the data recorded by a Phocus/Enigma logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the settings section of [PrimeWeb](http://cloud.primayer.com). 
 
 # Methods
 
