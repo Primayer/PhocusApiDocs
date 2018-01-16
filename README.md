@@ -87,7 +87,7 @@ Returns all info for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - http://api.primayer.com/api/phocus/logger
+    - http://api.primayer.com/api/phocus/loggerinfo
   2. Params
     - serial: (string - required)
       - logger serial number
@@ -120,7 +120,7 @@ Returns array of loggers with info within the date range
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/phocus/loggers
+    - http://api.primayer.com/api/phocus/allinfo
   2. Params
    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
