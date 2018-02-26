@@ -186,7 +186,7 @@ Returns leak summary for group
     - http://api.primayer.com/api/enigma/group
   2. Params
    - groupId: (Int - required)
-     -group Id (returned in the summary)
+     - group Id (returned in the summary)
    - date: (string - MM/dd/yyyy - required)
      - Date at which to get summary.
    - token: (string - required)
