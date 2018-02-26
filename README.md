@@ -13,6 +13,9 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*loggers*](#loggersbegin-end-token): Returns all loggers specified by date time range.
 - [*loggerinfo*](#loggerserial-begin-end-token): Returns info for logger specified by date time range.
 - [*allinfo*](#loggersbegin-end-token): Returns all loggers info specified by date time range.
+- [*summary*](#sumarydate-token): Returns all Enigma groups with leak count.
+- [*group*](#groupgroupId-date-token): Returns leak summary for group.
+
 # API
 
 
@@ -136,6 +139,66 @@ Returns array of loggers with info within the date range
 
 ```javascript
 const path = 'http://api.primayer.com/api/phocus/allinfo?begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
+## summary(date, token)
+
+##### Purpose
+Returns Enigma groups with leak count
+
+##### Signature
+   1. Endpoint
+    - http://api.primayer.com/api/enigma/summary
+  2. Params
+   - date: (string - MM/dd/yyyy - required)
+      - Date at which to get summary.
+    - token: (string - required)
+      - api authorization token.
+     
+##### Return Value
+  An array of objects, check examples for object structure:
+
+##### Example
+
+```javascript
+const path = 'http://api.primayer.com/api/enigma/summary?date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
+## group(groupId, date, token)
+
+##### Purpose
+Returns leak summary for group
+
+##### Signature
+   1. Endpoint
+    - http://api.primayer.com/api/enigma/group
+  2. Params
+   - groupId: (Int - required)
+     -group Id (returned in the summary)
+   - date: (string - MM/dd/yyyy - required)
+     - Date at which to get summary.
+   - token: (string - required)
+     - api authorization token.
+     
+##### Return Value
+  An array of objects, check examples for object structure:
+
+##### Example
+
+```javascript
+const path = 'http://api.primayer.com/api/enigma/group?groupId=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
