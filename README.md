@@ -11,8 +11,8 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 
 - [*logger*](#loggerserial-begin-end-token): Returns data for logger specified by date time range.
 - [*loggers*](#loggersbegin-end-token): Returns all loggers specified by date time range.
-- [*loggerinfo*](#loggerserial-begin-end-token): Returns info for logger specified by date time range.
-- [*allinfo*](#loggersbegin-end-token): Returns all loggers info specified by date time range.
+- [*loggerinfo*](#loggerinfoserial-begin-end-token): Returns info for logger specified by date time range.
+- [*allinfo*](#allinfobegin-end-token): Returns all loggers info specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupgroupId-date-token): Returns leak summary for group.
 
