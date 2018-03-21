@@ -47,8 +47,6 @@ namespace PrimeApi.Models
         [DataMember]
         public int[] SoundData { get; set; }
         [DataMember]
-        public int[] RadioData { get; set; }
-        [DataMember]
         public List<HistogramDataTransfer> Histograms { get; set; }
     }
 }
