@@ -16,7 +16,7 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupgroupId-date-token): Returns leak summary for group.
 - [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
-- [*contractallinfo*](#contractallinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
+- [*contractallinfo*](#contractinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
 # API
 
 
@@ -240,7 +240,7 @@ fetch(path).then(function(response) {
 
 <br />
 
-## contractallinfo(begin, end, contarct, token)
+## contractinfo(begin, end, contarct, token)
 
 ##### Purpose
 Returns array of loggers with info within the date range
