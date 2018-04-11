@@ -207,6 +207,7 @@ fetch(path).then(function(response) {
 ```
 
 <br />
+
 ## contractloggers(begin, end, contract, token)
 
 ##### Purpose
