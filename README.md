@@ -15,7 +15,8 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*allinfo*](#allinfobegin-end-token): Returns all loggers info specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupgroupId-date-token): Returns leak summary for group.
-
+- [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
+- [*contractallinfo*](#contractallinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
 # API
 
 
@@ -199,6 +200,71 @@ Returns leak summary for group
 
 ```javascript
 const path = 'http://api.primayer.com/api/enigma/group?groupId=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+## contractloggers(begin, end, contract, token)
+
+##### Purpose
+Returns array of loggers with data within the date range
+
+##### Signature
+   1. Endpoint
+    - http://api.primayer.com/api/contract/loggers
+  2. Params
+   - begin: (string - MM/dd/yyyy - required)
+      - Date at which to start querying logger data.
+    - end: (string -  MM/dd/yyyy - required)
+      - Date at which to finish querying logger data.
+	- contract: (string - required)
+      - contract identifier
+    - token: (string - required)
+      - api authorization token.
+     
+##### Return Value
+  An array of objects, check examples for object structure:
+
+##### Example
+
+```javascript
+const path = 'http://api.primayer.com/api/contract/loggers?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
+## contractallinfo(begin, end, contarct, token)
+
+##### Purpose
+Returns array of loggers with info within the date range
+
+##### Signature
+   1. Endpoint
+    - http://api.primayer.com/api/contract/allinfo
+  2. Params
+   - begin: (string - MM/dd/yyyy - required)
+      - Date at which to start querying logger data.
+    - end: (string -  MM/dd/yyyy - required)
+      - Date at which to finish querying logger data.
+    - contract: (string - required)
+      - contract identifier
+    - token: (string - required)
+      - api authorization token.
+     
+##### Return Value
+  An array of objects, check examples for object structure:
+
+##### Example
+
+```javascript
+const path = 'http://api.primayer.com/api/contract/allinfo?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
