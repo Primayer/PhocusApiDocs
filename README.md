@@ -209,7 +209,7 @@ fetch(path).then(function(response) {
 
 <br />
 
-## correlation(left, right, date, group, token)
+## correlation(left, right, group, date, token)
 
 ##### Purpose
 Returns PrimeWeb url for a correlation
@@ -222,10 +222,10 @@ Returns PrimeWeb url for a correlation
      - logger serial number
    - right: (string - required)
 	 - logger serial number
-   - date: (string - MM/dd/yyyy - required)
-     - Date at which to get summary
    - group: (int - required)
      - group id
+   - date: (string - MM/dd/yyyy - required)
+     - Date at which to get summary
    - token: (string - required)
      - api authorization token
      
@@ -235,7 +235,7 @@ Returns PrimeWeb url for a correlation
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/enigma/correlation?left=123456&right=123456&date=01/01/2017&group=1234&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://api.primayer.com/api/enigma/correlation?left=123456&right=123456&group=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
