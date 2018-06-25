@@ -15,6 +15,7 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*allinfo*](#allinfobegin-end-token): Returns all loggers info specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupgroupId-date-token): Returns leak summary for group.
+- [*correlation*](#correlationleft-right-group-date-token): Returns PrimeWeb url to correlation
 - [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
 - [*contractallinfo*](#contractinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
 # API
@@ -200,6 +201,41 @@ Returns leak summary for group
 
 ```javascript
 const path = 'http://api.primayer.com/api/enigma/group?groupId=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
+## correlation(left, right, date, group, token)
+
+##### Purpose
+Returns PrimeWeb url for a correlation
+
+##### Signature
+   1. Endpoint
+    - http://api.primayer.com/api/enigma/correlation
+  2. Params
+   - left: (string - required)
+     - logger serial number
+   - right: (string - required)
+	 - logger serial number
+   - date: (string - MM/dd/yyyy - required)
+     - Date at which to get summary
+   - group: (int - required)
+     - group id
+   - token: (string - required)
+     - api authorization token
+     
+##### Return Value
+  A url to the correlation screen on PrimeWeb
+
+##### Example
+
+```javascript
+const path = 'http://api.primayer.com/api/enigma/correlation?left=123456&right=123456&date=01/01/2017&group=1234&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
