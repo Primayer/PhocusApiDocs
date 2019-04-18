@@ -30,14 +30,14 @@ Returns all data for the logger within the date range
   1. Endpoint
     - http://access.primayer.com/api/phocus/logger
   2. Params
-    - serial: (string - required)
-      - logger serial number
+   - serial: (string - required)
+     - logger serial number
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - token: (string - required)
+     - api authorization token.
       
 ##### Return Value
   An object, Check examples for object structure.
@@ -64,11 +64,11 @@ Returns array of loggers with data within the date range
     - http://access.primayer.com/api/phocus/loggers
   2. Params
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - token: (string - required)
+     - api authorization token.
      
 ##### Return Value
   An array of objects, check examples for object structure:
@@ -94,14 +94,14 @@ Returns all info for the logger within the date range
   1. Endpoint
     - http://access.primayer.com/api/phocus/loggerinfo
   2. Params
-    - serial: (string - required)
-      - logger serial number
+   - serial: (string - required)
+     - logger serial number
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - token: (string - required)
+     - api authorization token.
       
 ##### Return Value
   An object, Check examples for object structure.
@@ -126,8 +126,8 @@ Returns array of loggers with info within the date range
 ##### Signature
    1. Endpoint
     - http://access.primayer.com/api/phocus/allinfo
-  2. Params
-   - begin: (string - MM/dd/yyyy - required)
+   2. Params
+    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
     - end: (string -  MM/dd/yyyy - required)
       - Date at which to finish querying logger data.
@@ -158,14 +158,14 @@ Returns signal data for the logger within the date range
   1. Endpoint
     - http://access.primayer.com/api/phocus/signal
   2. Params
-    - serial: (string - required)
-      - logger serial number
+   - serial: (string - required)
+     - logger serial number
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - token: (string - required)
+     - api authorization token.
       
 ##### Return Value
   An object, Check examples for object structure.
@@ -191,7 +191,7 @@ Returns Enigma groups with leak count
    1. Endpoint
     - http://access.primayer.com/api/enigma/summary
   2. Params
-   - date: (string - MM/dd/yyyy - required)
+    - date: (string - MM/dd/yyyy - required)
       - Date at which to get summary.
     - token: (string - required)
       - api authorization token.
