@@ -127,12 +127,12 @@ Returns array of loggers with info within the date range
    1. Endpoint
     - http://access.primayer.com/api/phocus/allinfo
    2. Params
-    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data
-    - token: (string - required)
-      - api authorization token
+   - begin: (string - MM/dd/yyyy - required)
+     - Date at which to start querying logger data
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data
+   - token: (string - required)
+     - api authorization token
      
 ##### Return Value
   An array of objects, check examples for object structure:
@@ -191,10 +191,10 @@ Returns Enigma groups with leak count
    1. Endpoint
     - http://access.primayer.com/api/enigma/summary
    2. Params
-    - date: (string - MM/dd/yyyy - required)
-      - Date at which to get summary
-    - token: (string - required)
-      - api authorization token
+   - date: (string - MM/dd/yyyy - required)
+     - Date at which to get summary
+   - token: (string - required)
+     - api authorization token
      
 ##### Return Value
   An array of objects, check examples for object structure:
