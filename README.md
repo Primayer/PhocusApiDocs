@@ -4,7 +4,7 @@ Questions? Find us at [development@primayer.co.uk](mailto:development@primayer.c
 
 # Phocus Data Access
 
-The Primayer API provides access to the data recorded by a Phocus/Enigma logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the settings section of [PrimeWeb](http://cloud.primayer.com). 
+The Primayer API provides access to the data recorded by a Phocus/Enigma logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the settings section of [PrimeWeb](http://cloud.primayer.com). The current endpoint api.primayer.com is being deprecated, please start using access.primayer.com instead.
 
 # Methods
 
@@ -28,7 +28,7 @@ Returns all data for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - http://api.primayer.com/api/phocus/logger
+    - http://access.primayer.com/api/phocus/logger
   2. Params
     - serial: (string - required)
       - logger serial number
@@ -45,7 +45,7 @@ Returns all data for the logger within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/phocus/logger?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/phocus/logger?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -61,7 +61,7 @@ Returns array of loggers with data within the date range
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/phocus/loggers
+    - http://access.primayer.com/api/phocus/loggers
   2. Params
    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
@@ -76,7 +76,7 @@ Returns array of loggers with data within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/phocus/loggers?begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/phocus/loggers?begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -92,7 +92,7 @@ Returns all info for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - http://api.primayer.com/api/phocus/loggerinfo
+    - http://access.primayer.com/api/phocus/loggerinfo
   2. Params
     - serial: (string - required)
       - logger serial number
@@ -109,7 +109,7 @@ Returns all info for the logger within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/phocus/loggerinfo?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/phocus/loggerinfo?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -125,7 +125,7 @@ Returns array of loggers with info within the date range
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/phocus/allinfo
+    - http://access.primayer.com/api/phocus/allinfo
   2. Params
    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
@@ -140,7 +140,7 @@ Returns array of loggers with info within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/phocus/allinfo?begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/phocus/allinfo?begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -156,7 +156,7 @@ Returns signal data for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - http://api.primayer.com/api/phocus/signal
+    - http://access.primayer.com/api/phocus/signal
   2. Params
     - serial: (string - required)
       - logger serial number
@@ -173,7 +173,7 @@ Returns signal data for the logger within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/phocus/signal?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/phocus/signal?serial=12345&begin=01/01/2017&end=01/02/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -189,7 +189,7 @@ Returns Enigma groups with leak count
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/enigma/summary
+    - http://access.primayer.com/api/enigma/summary
   2. Params
    - date: (string - MM/dd/yyyy - required)
       - Date at which to get summary.
@@ -202,7 +202,7 @@ Returns Enigma groups with leak count
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/enigma/summary?date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/enigma/summary?date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -218,7 +218,7 @@ Returns leak summary for group
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/enigma/group
+    - http://access.primayer.com/api/enigma/group
   2. Params
    - groupId: (Int - required)
      - group Id (returned in the summary)
@@ -233,7 +233,7 @@ Returns leak summary for group
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/enigma/group?groupId=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/enigma/group?groupId=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -249,7 +249,7 @@ Returns PrimeWeb url for a correlation
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/enigma/correlation
+    - http://access.primayer.com/api/enigma/correlation
   2. Params
    - left: (string - required)
      - logger serial number
@@ -268,7 +268,7 @@ Returns PrimeWeb url for a correlation
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/enigma/correlation?left=123456&right=123456&group=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/enigma/correlation?left=123456&right=123456&group=1234&date=01/01/2017&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -284,7 +284,7 @@ Returns array of loggers with data within the date range
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/contract/loggers
+    - http://access.primayer.com/api/contract/loggers
   2. Params
    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
@@ -301,7 +301,7 @@ Returns array of loggers with data within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/contract/loggers?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/contract/loggers?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -317,7 +317,7 @@ Returns array of loggers with info within the date range
 
 ##### Signature
    1. Endpoint
-    - http://api.primayer.com/api/contract/allinfo
+    - http://access.primayer.com/api/contract/allinfo
   2. Params
    - begin: (string - MM/dd/yyyy - required)
       - Date at which to start querying logger data.
@@ -334,7 +334,7 @@ Returns array of loggers with info within the date range
 ##### Example
 
 ```javascript
-const path = 'http://api.primayer.com/api/contract/allinfo?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
+const path = 'http://access.primayer.com/api/contract/allinfo?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
