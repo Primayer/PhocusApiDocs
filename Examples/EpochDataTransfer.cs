@@ -29,6 +29,8 @@ namespace PrimeApi.Models
         [DataMember]
         public Nullable<double> RemainingBattery { get; set; }
         [DataMember]
+        public Nullable<double> Temperature { get; set; }
+        [DataMember]
         public Nullable<int> OutlierThresh { get; set; }
         [DataMember]
         public Nullable<int> TH2 { get; set; }

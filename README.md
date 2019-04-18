@@ -287,13 +287,13 @@ Returns array of loggers with data within the date range
     - http://access.primayer.com/api/contract/loggers
   2. Params
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-	- contract: (string - required)
-      - contract identifier
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - contract: (string - required)
+     - contract identifier
+   - token: (string - required)
+     - api authorization token.
      
 ##### Return Value
   An array of objects, check examples for object structure:
@@ -310,7 +310,7 @@ fetch(path).then(function(response) {
 
 <br />
 
-## contractinfo(begin, end, contarct, token)
+## contractinfo(begin, end, contract, token)
 
 ##### Purpose
 Returns array of loggers with info within the date range
@@ -320,13 +320,13 @@ Returns array of loggers with info within the date range
     - http://access.primayer.com/api/contract/allinfo
   2. Params
    - begin: (string - MM/dd/yyyy - required)
-      - Date at which to start querying logger data.
-    - end: (string -  MM/dd/yyyy - required)
-      - Date at which to finish querying logger data.
-    - contract: (string - required)
-      - contract identifier
-    - token: (string - required)
-      - api authorization token.
+     - Date at which to start querying logger data.
+   - end: (string -  MM/dd/yyyy - required)
+     - Date at which to finish querying logger data.
+   - contract: (string - required)
+     - contract identifier
+   - token: (string - required)
+     - api authorization token.
      
 ##### Return Value
   An array of objects, check examples for object structure:
