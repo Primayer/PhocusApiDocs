@@ -335,7 +335,7 @@ Returns array of loggers with info within the date range
 ##### Example
 
 ```javascript
-const path = 'http://access.primayer.com/api/contract/allinfo?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
+const path = 'https://access.primayer.com/api/contract/allinfo?begin=01/01/2017&end=01/02/2017&contract=name&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -362,7 +362,7 @@ Returns logger report csv
 ##### Example
 
 ```javascript
-const path = 'http://access.primayer.com/api/enigma/loggerreport?token=00000000-0000-0000-0000-000000000000'
+const path = 'https://access.primayer.com/api/enigma/loggerreport?token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
