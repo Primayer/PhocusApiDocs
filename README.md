@@ -18,6 +18,7 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*correlation*](#correlationleft-right-group-date-token): Returns PrimeWeb url to correlation
 - [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
 - [*contractallinfo*](#contractinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
+- [*loggerreport*](#loggerreporttoken): CSV logger report.
 # API
 
 
@@ -342,3 +343,31 @@ fetch(path).then(function(response) {
 ```
 
 <br />
+
+## loggerreport(token)
+
+##### Purpose
+Returns logger report csv
+
+##### Signature
+   1. Endpoint
+    - https://access.primayer.com/api/enigma/loggerreport
+  2. Params
+   - token: (string - required)
+     - api authorization token.
+     
+##### Return Value
+  csv report
+
+##### Example
+
+```javascript
+const path = 'http://access.primayer.com/api/enigma/loggerreport?token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
