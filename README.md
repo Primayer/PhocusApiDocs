@@ -1,6 +1,6 @@
 # Primayer Phocus API documentation
 
-Questions? Find us at [development@primayer.co.uk](mailto:development@primayer.co.uk)
+Questions? Find us at [development@ovarro.com](mailto:development@primayer.co.uk)
 
 # Phocus Data Access
 
