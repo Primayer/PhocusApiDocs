@@ -19,6 +19,7 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
 - [*contractallinfo*](#contractinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
 - [*loggerreport*](#loggerreporttoken): CSV logger report.
+- [*dmareport*](#dmareportbegin-end-token): CSV Phocus Dma report.
 # API
 
 
@@ -243,6 +244,37 @@ fetch(path).then(function(response) {
 
 <br />
 
+## groupaudio(date, group, token)
+
+##### Purpose
+Returns audio data for group
+
+##### Signature
+   1. Endpoint
+    - https://access.primayer.com/api/enigma/groupaudio
+  2. Params
+   - date: (string - MM/dd/yyyy - required)
+     - Date at which to get audio.
+   - groupId: (Int - required)
+     - group Id (returned in the summary)
+   - token: (string - required)
+     - api authorization token.
+     
+##### Return Value
+  An array of objects, check examples for object structure:
+
+##### Example
+
+```javascript
+const path = 'https://access.primayer.com/api/enigma/groupaudio?date=01/01/2017&groupId=1234&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+
+<br />
+
 ## correlation(left, right, group, date, token)
 
 ##### Purpose
@@ -371,3 +403,32 @@ fetch(path).then(function(response) {
 
 <br />
 
+## dmareport(begin, end, token)
+
+##### Purpose
+Returns Phocus DMA report csv
+
+##### Signature
+   1. Endpoint
+    - https://access.primayer.com/api/phocus/dmareport
+  2. Params
+   - begin: (string - MM/dd/yyyy HHmm - required)
+     - Date at which to start querying.
+   - end: (string -  MM/dd/yyyy HHmm - required)
+     - Date at which to finish querying.
+   - token: (string - required)
+     - api authorization token.
+     
+##### Return Value
+  csv report
+
+##### Example
+
+```javascript
+const path = 'https://access.primayer.com/api/phocus/dmareport?begin=01/01/2017 0000&end=01/02/2017 0000&token=00000000-0000-0000-0000-000000000000'
+
+fetch(path).then(function(response) {
+    console.log(response);
+})
+```
+<br />
