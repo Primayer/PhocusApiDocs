@@ -18,3 +18,10 @@
         public float DistanceFromLeft { get; set; }
         public string URL { get; set; }
     }
+
+    public class AudioModel
+    {
+        public string Logger { get; set; }
+        public string Timestamp { get; set; }
+        public byte[] Audio { get; set; }
+    }
