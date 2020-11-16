@@ -15,7 +15,7 @@ The Primayer API provides access to the data recorded by a Phocus/Enigma logger.
 - [*signal*](#signalserial-begin-end-token): Returns signal for logger specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupgroupId-date-token): Returns leak summary for group.
-- [*groupaudio*](#groupdate-group-token): Returns audio for group.
+- [*groupaudio*](#groupaudiodate-group-token): Returns audio for group.
 - [*correlation*](#correlationleft-right-group-date-token): Returns PrimeWeb url to correlation
 - [*contractloggers*](#contractloggersbegin-end-contract-token): Returns all loggers specified by date time and contract.
 - [*contractallinfo*](#contractinfobegin-end-contract-token): Returns all loggers info specified by date time and contract.
