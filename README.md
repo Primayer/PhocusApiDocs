@@ -267,7 +267,7 @@ Returns audio data for group
 ##### Example
 
 ```javascript
-const path = 'https://access.primayer.com/api/enigma/groupaudio?date=01/01/2017&groupId=1234&token=00000000-0000-0000-0000-000000000000'
+const path = 'https://access.primayer.com/api/enigma/groupaudio?date=01/01/2017&group=1234&token=00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
