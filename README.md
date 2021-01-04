@@ -256,7 +256,7 @@ Returns audio data for group
   2. Params
    - date: (string - MM/dd/yyyy - required)
      - Date at which to get audio.
-   - groupId: (Int - required)
+   - group: (Int - required)
      - group Id (returned in the summary)
    - token: (string - required)
      - api authorization token.
